@@ -1,0 +1,5 @@
+# Ignore the data directory containing raw TCX/GPX files
+/data/
+# Optionally ignore generated Python bytecode
+__pycache__/
+*.pyc
