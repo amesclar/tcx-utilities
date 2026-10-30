@@ -15,24 +15,20 @@ from tcx_utilities.shared import (
     resolve_tcx_files,
 )
 
-# Waypoints 0..4 (Start through Lower Most) are outbound.
-# Waypoint 5 (Turn Around) is the midpoint turnaround.
-# Waypoints 6..10 (Trail End through End) are inbound.
+# Waypoints 0..2 (Start through Lower Most) are outbound.
+# Waypoint 3 (Turn Around) is the midpoint turnaround.
+# Waypoints 4..6 (Trail End through End) are inbound.
 REFERENCE_TABLE = [
     ("Start", "0:00:00", 48.213993, -122.729362),
-    ("Power Line", "0:02:53", 48.213978, -122.740448),
-    ("Winterhawk Out", "0:05:39", 48.212208, -122.739708),
     ("Trail Start", "0:07:54", 48.209930, -122.738724),
     ("Lower Most", "0:17:00", 48.207470, -122.735039),
     ("Turn Around", "0:30:35", 48.210117, -122.730797),
     ("Trail End", "0:45:50", 48.209934, -122.738770),
-    ("Winterhawk Back", "0:48:05", 48.212349, -122.739761),
-    ("Power Line", "0:50:20", 48.213776, -122.740295),
-    ("Trun Around", "0:52:30", 48.215134, -122.736534),
+    ("Turn Around", "0:52:30", 48.215134, -122.736534),
     ("End", "0:55:18", 48.213829, -122.729362),
 ]
 
-TURNAROUND_INDEX = 5
+TURNAROUND_INDEX = 3
 MIN_POINTS_FOR_SPLIT = 20
 EARTH_RADIUS_FT = 20_902_231.0  # mean Earth radius in feet
 
